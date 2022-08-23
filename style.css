@@ -1,0 +1,370 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/********************** Header Section *********************/
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  padding: 30px 60px 0 60px;
+  box-sizing: border-box;
+  background-color: #4b4bf0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.nav-item {
+  margin-top: 4px;
+}
+
+.nav-item-active {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  padding: 5px 10px;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+nav > svg {
+  padding-top: 4px;
+}
+
+.header-text {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+.header-image {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.menu {
+  display: none;
+}
+
+/********************** Companies Section *********************/
+
+.companies {
+  background-color: #f1f1f1;
+  height: 170px;
+  padding: 30px 600px 0 60px;
+  width: calc(100% - 660px);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.companies > a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-family: "Righteous", cursive;
+  font-size: 24px;
+}
+
+/********************** API Section *********************/
+
+.api {
+  padding: 30px 60px 0 60px;
+  background-color: #f1f1f1;
+}
+
+.api-heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.cards {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-active {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card {
+  padding: 30px 20px;
+}
+
+.card:last-child {
+  position: relative;
+  margin-right: 20px;
+}
+
+.card:last-child::after {
+  content: url(./images/forward.svg);
+  position: absolute;
+  right: -50px;
+  top: 35%;
+  border: 1px solid #ffffff;
+  padding: 10px 10px 5px 12px;
+  border-radius: 100%;
+  background-color: #4b4bf0;
+}
+
+/********************** Blog Section *********************/
+
+.blog-heading {
+  background-color: #f1f1f1;
+  padding: 60px 60px 0 60px;
+  position: relative;
+}
+
+.blog-heading::after{
+  content: 'See All Article';
+  position: absolute;
+  color: #4b4bf0;
+  font-weight: 700;
+  right: 60px;
+  bottom: 10px;
+}
+
+.blog-cards {
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 30px 60px 60px 60px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 287px;
+  border-radius: 50px 10px 10px 20px;
+  position: relative;
+}
+
+.blog-content {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+img[alt="first"] {
+  position: absolute;
+  bottom: 10px;
+  left: 290px;
+}
+
+img[alt="second"] {
+  position: absolute;
+  bottom: 10px;
+  left: 290px;
+}
+
+.blog-author-1 {
+  position: absolute;
+  bottom: 30px;
+  left: 350px;
+}
+
+.blog-author-2 {
+  position: absolute;
+  bottom: 30px;
+  left: 350px;
+}
+
+/********************** FAQ Section *********************/
+
+.faq-section {
+  padding: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #dfdddd;
+  height: 324px;
+}
+
+.faq-content {
+  flex-grow: 1;
+}
+
+h4 {
+  width: 70%;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.faq-section h2 {
+  line-height: 45px;
+  margin: 20px 0;
+}
+
+.faq-content > button {
+  color: #ffffff;
+  background-color: #4b4bf0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.faq-image{
+  align-self: flex-start;
+}
+
+
+/********************** Download Section *********************/
+
+.download-section {
+  padding: 120px 60px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.download-content  span {
+  font-weight: 400;
+}
+
+.download-email {
+  width: 540px;
+  background-color: #dfdddd;
+  border-radius: 40px;
+}
+
+form {
+  display: flex;
+}
+
+form > input {
+  background-color: #dfdddd;
+  background-color: #dfdddd;
+  border: none;
+  flex-grow: 1;
+  padding: 15px 25px;
+  border-radius: 40px;
+}
+
+form > input::placeholder{
+  color: #1f1f1f;
+  font-size: 14px;
+}
+
+form > button {
+  border-radius: 40px;
+  border: none;
+  background-color: #4b4bf0;
+  padding: 15px 35px;
+  color: #ffffff;
+}
+
+/********************** Footer Section *********************/
+
+.footer-section {
+  padding: 100px 60px;
+  background-color: #4b4bf0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+li {
+  margin-top: 20px;
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 35px;
+}
+
+.list > li:nth-child(3) {
+  position: relative;
+}
+
+.list > li:nth-child(4) {
+  position: relative;
+}
+
+.list > li:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 50px;
+}
+
+.list > li:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #ffffff;
+  top: 5px;
+  right: 50px;
+}
+
+.list > li:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 60px;
+}
+
+.footer-logos {
+  margin-left: 21px;
+  margin-bottom: 10px;
+}
+
+.logos-list > li:nth-child(2) {
+  position: relative;
+}
+
+.logos-list > li:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 90px;
+}
+
+.logos-list > li:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #ffffff;
+  top: 5px;
+  right: 90px;
+}
